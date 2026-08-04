@@ -74,7 +74,7 @@ jobs:
           format: spdx-json
           output-file: dist/pursivo-${{ steps.assets.outputs.version }}-sbom.spdx.json
 
-      - uses: actions/attest-build-provenance@v2
+      - uses: actions/attest-build-provenance@v4
         with:
           subject-path: dist/*
 
