@@ -1,0 +1,29 @@
+name: Feature proposal
+description: Propose an improvement consistent with Pursivo's local-first boundaries.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Job-seeker problem
+      description: Describe the problem before the preferred solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: Does this introduce a new network path?
+      options: ["No", "Yes, only after an explicit action", "Yes, background or automatic"]
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility and privacy considerations

@@ -1,0 +1,32 @@
+name: Bug report
+description: Report reproducible incorrect behavior without personal job-search data.
+title: "fix: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste API keys, CV content, backups, or private application details.
+  - type: input
+    id: version
+    attributes:
+      label: Pursivo version
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

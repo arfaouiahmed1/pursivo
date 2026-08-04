@@ -1,0 +1,4 @@
+-keepattributes *Annotation*
+-dontwarn org.bouncycastle.**
+-dontwarn org.apache.fontbox.**
+-dontwarn com.gemalto.jp2.JP2Decoder
